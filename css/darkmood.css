@@ -1,0 +1,103 @@
+:root:has(.mode:checked) {
+    --default-color: #252525;
+    --main-color: #202020;
+    --id-color: #C17E20;
+    --hover-color: #d78c23;
+}
+
+body:has(.mode:checked) ::selection {
+    background-color: var(--id-color);
+    color: var(--default-color);
+}
+
+body:has(.mode:checked) nav {
+    background-color: #171717;
+}
+
+
+body:has(.mode:checked) .light {
+    color: #fff;
+}
+
+body:has(.mode:checked) .mode-group .dark {
+    display: none;
+}
+
+body:has(.mode:checked) .mode-group .light {
+    display: block;
+}
+
+body:not(body:has(:target)):has(.mode:checked) li a[href="#home"],
+body:has(#home:target):has(.mode:checked) li a[href="#home"],
+body:has(#contact:target):has(.mode:checked) li a[href="#contact"],
+body:has(#gallery:target):has(.mode:checked) li a[href="#gallery"],
+body:has(#chefs:target):has(.mode:checked) li a[href="#chefs"] {
+    color: #fff;
+}
+
+body:has(.mode:checked) .hidden {
+    color: #fff;
+}
+
+body:has(.mode:checked) header .container .header-content .btn-group .book {
+    color: #000;
+}
+
+body:has(.mode:checked) header .container .header-content .btn-group .video-btn {
+    color: #fff;
+}
+
+
+body:has(.mode:checked) header .container .header-content .btn-group .video-btn:hover {
+    color: var(--hover-color);
+}
+
+body:has(.mode:checked) header .container .header-content .btn-group .video-btn div::before {
+    background-color: #0D0D0D;
+}
+
+body:has(.mode:checked) h1, body:has(.mode:checked) h2, body:has(.mode:checked) h3 {
+    color: #fff;
+}
+
+body:has(.mode:checked) p {
+    color: #9f9f9f;
+}
+
+body:has(.mode:checked) nav a:hover {
+    color: #fff;
+}
+
+body:has(.mode:checked) section .container .card-chefs .card {
+    background-color: #171717;
+    box-shadow: 3px 3px 15px 0px #000000c7;
+}
+
+body:has(.mode:checked) section .container .details h3 {
+    color: #ADADAD;
+}
+
+
+body:has(.mode:checked) section .container .details p {
+    color: #fff;
+}
+
+body:has(.mode:checked) form {
+    box-shadow: 3px 3px 15px 0px rgba(17, 17, 17, 0.677);
+    background-color: #222;
+}
+
+body:has(.mode:checked) section .container .details .address,
+body:has(.mode:checked) section .container .details .email,
+body:has(.mode:checked) section .container .details .call,
+body:has(.mode:checked) section .container .details .opening{
+    background-color: #0D0D0D;
+}
+
+body:has(.mode:checked) footer .container .second div.subscribe form button {
+    background-color: var(--id-color);
+}
+
+body:has(.mode:checked) footer .container .second div.subscribe form button:hover {
+    background-color: var(--hover-color);
+}

@@ -1,0 +1,192 @@
+@media screen and (max-width:992px) {
+    nav .container {
+        width: 75%;
+    }
+    
+    nav .container ul {
+        display: none;
+    }
+    
+    .hidden {
+        display: inline-block;
+        font-size: 25px;
+    }
+    
+    header .container {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        /* justify-content: space-between; */
+        align-items: center;
+        padding-top: 150px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    header .container .header-content {
+        width: 100%;
+        text-align: center;
+        padding-top: 50px;
+    }
+    
+    header .container picture {
+    width: 75%;
+    }
+    
+    header .container .header-content p {
+        font-size: 15px;
+        line-height: 1.5;
+        max-width: 70%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    header .container .header-content .btn-group {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        gap: 2.5rem;
+        align-items: center;
+    }
+    
+    header .container .header-content .btn-group .book {
+        border-radius: 20px;
+    }
+    
+    section .container {
+        width: 75%;
+    }
+    
+    section .container .card-chefs .card {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    
+    section .sec-img {
+    min-height: 1350px;
+    flex-direction: column;
+    }
+    
+    section .sec-img picture {
+        width: 45%;
+        position: relative;
+        overflow: hidden;
+        border: 5px solid #fff;
+    }
+    
+    section .container .details {
+        gap: 5px;
+    }
+    
+    section form div.name {
+        gap: 20px;
+    }
+    
+    section form div.name input {
+        width: 100%;
+    }
+    
+    footer .container {
+        width: 75%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font-family: 'Open Sans', sans-serif;
+        padding: 40px 0px;
+    }
+    
+    footer .container .first {
+        width: 40%;
+        order: 1;
+    }
+    
+    footer .container .second {
+        width: 90%;
+        order: 2;
+        margin-top: 30px;
+    }
+    
+    footer .container .third {
+        width: 40%;
+        order: 1;
+    }
+}
+
+@media screen and (max-width:768px) {
+    
+    nav .container {
+        width: 95%;
+    }
+    
+    header .container picture {
+        width: 95%;
+        }
+    
+    section .container {
+        width: 95%;
+    }
+    
+    section .container .card-chefs .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    section .sec-img {
+        max-height: 6000px;
+        flex-direction: column;
+        }
+    
+    section .sec-img picture {
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        border: 5px solid #fff;
+    }
+    
+    section .container .details .address,
+    section .container .details .email,
+    section .container .details .call,
+    section .container .details .opening {
+        width: 100%;
+    }
+    
+    footer .container {
+        width: 95%;
+    }
+    
+    footer .container .first {
+        width: 100%;
+        order: 1;
+    }
+    
+    footer .container .second {
+        width: 100%;
+        order: 1;
+        margin-top: 30px;
+    }
+    
+    footer .container .third {
+        width: 100%;
+        order: 1;
+    }
+    
+    footer .container .second div.subscribe form {
+        gap: 10px;
+    }
+    
+    footer .container .second div.subscribe form input {
+        width: 100%;
+        padding: 15px 10px;
+        border: none;
+        border-radius: 0;
+    }
+    
+    footer .container .second div.subscribe form button {
+        width: 100%;
+        border-radius: 0;
+        color: #fff;
+        background-color: #ce1212;
+        padding: 15px;
+        border: none;
+    }
+}
